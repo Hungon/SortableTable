@@ -1,0 +1,55 @@
+<!doctype>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+<title>javascript coding exam</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<style>
+thead {
+  width: 70%;
+}
+tbody {
+  display: block;
+}
+tbody td {
+  padding: 10px;
+}
+
+img.thum {
+  width: 192px;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>My Album</h2>
+  <form class="form-horizontal" role="form">
+    <div class="form-group">
+      <button id="start" onclick="start_timer()" type="button" class="btn btn-default">Shuffle</button>
+      <button id="stop" onclick="stop_timer()" type="button" class="btn btn-default">Stop</button>
+      <button id="sort" onclick="sort_table(3)" type="button" class="btn btn-default">Sort</button>
+    </div>
+  </form>
+
+  <div class="contents">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="header_id">Id</th>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script src="json/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
